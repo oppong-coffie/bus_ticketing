@@ -7,6 +7,9 @@ module.exports = {
                 poppins: ["Poppins", "sans-serif"],
                 quicksand: ["Quicksand"],
             },
+            backgroundImage: {
+                'hero': "url('/bus4.jpg')",
+              }
         },
     },
     plugins: [],

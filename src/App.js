@@ -1,11 +1,14 @@
 import './App.css';
-import { Button } from 'antd';
+import Dashboard from './components-station_master/Dashboard';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <h1 className='bg-red-400'>TESTING</h1>
-      <Button type='primary'>try</Button>
+      <Router>
+        <Dashboard />
+      </Router>
+      
     </div>
   );
 }
