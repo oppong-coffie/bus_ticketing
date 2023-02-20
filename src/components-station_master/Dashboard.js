@@ -6,6 +6,7 @@ import Item from "antd/es/list/Item";
 import { Routes, Route } from "react-router-dom"
 import Dash_content from './Dash_content';
 import View_busses from "./View_busses";
+import Reports from "./Report";
 import Register_admin from "./Register_admin";
 import Add from "./Add";
 import Report from "./Report";
@@ -204,6 +205,8 @@ const Dashboard = () => {
                   icon: <PhoneOutlined className="!text-lg" />,
                   key: "/report",
                 },
+                
+              
                 {
                   label: "Logout",
                   icon: <PhoneOutlined className="!text-lg" />,
@@ -221,6 +224,7 @@ const Dashboard = () => {
               <Route path="register_admin" element={<Register_admin />}></Route>
               <Route path="view_admin" element={<View_admin />}></Route>
               <Route path="payments" element={<Payments />}></Route>
+              <Route path="reports" element={<Reports />}></Route>
               <Route path="add" element={<Add />}></Route>
               <Route path="report" element={<Report />}></Route>
             </Routes>
